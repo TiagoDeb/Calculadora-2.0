@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='2.css') }}">
+    <title>Calculadora</title>
+</head>
+<body>
+
+<div class="calculator">
+    <form method="POST">
+        <input type="text" name="display" class="display" value="{{ valor }}" readonly><br>
+
+        <button type="submit" name="botao" value="1">1</button>
+        <button type="submit" name="botao" value="2">2</button>
+        <button type="submit" name="botao" value="3">3</button><br>
+        <button type="submit" name="botao" value="4">4</button>
+        <button type="submit" name="botao" value="5">5</button>
+        <button type="submit" name="botao" value="6">6</button><br>
+        <button type="submit" name="botao" value="7">7</button>
+        <button type="submit" name="botao" value="8">8</button>
+        <button type="submit" name="botao" value="9">9</button><br>
+        <button type="submit" name="botao" value="+">+</button>
+        <button type="submit" name="botao" value="=">=</button>
+        <button type="submit" name="botao" value="C" style="background-color: #ff4d4d; color: white;">C</button>
+    </form>
+</div>
+
+</body>
+</html>
